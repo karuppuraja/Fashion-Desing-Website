@@ -1,0 +1,150 @@
+body{
+margin:0;
+padding:0;
+}
+header{
+	/*max-width: 1200px;*/
+	margin: 0;
+	padding: 10px;
+	background: #000;
+	box-sizing: border-box;
+}
+
+.clearfix{
+	clear:both;
+}
+nav ul{
+	margin:0;
+	padding:0;
+	display:flex;
+	
+}
+nav ul li{
+	list-style-type:none;
+}
+nav ul li a{
+	display: block;
+	margin: 10px 10px 10px 10px;
+	padding: 10px 20px;
+	text-decoration: none;
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+}
+nav ul li a.active,
+nav ul li a:hover{
+	background: #fff;
+	color:#000;
+	transition: 0.5s;
+	
+}
+.section-1{
+	background: url('../images/header-images.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:500px;
+	background-position:flex;
+	margin-top:70px;
+}
+.caption-text h1{
+	position:relative;
+	color:red;
+	padding:50px;
+	width:400px;
+	text-transform:uppercase;
+	font-weight:800;
+	line-height:50px;
+	padding-top:2em;
+}
+.Product-wrap{
+	text-align:center;
+	margin-top:2%;
+	
+}
+.Product-wrap h2{
+	font-family: 'Open Sans', sans-serif;
+	text-transform:uppercase;
+	font-weight:800;
+}
+.men-style-1 img{
+	width:350px;
+}
+.content img:hover{
+	-ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+ .column {
+  padding: 8px;
+  float:left;
+  width:25%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content {
+  background-color: white;
+  padding: 10px;
+}
+.buy-now-button{
+	padding-top:10px;
+	float:right;
+}
+button{
+	background-color:orange;
+	border-color:orange;
+	border-radius:6px;
+	color:#fff;
+	text-transform:uppercase;
+	font-weight:700;
+}
+.cart{
+	padding-top:10px;
+	font-weight:700;
+	float:left;
+}
+.carousel-inner img {
+      width: 100%;
+      height: 50%;
+  }
+  .section-4{
+	  margin-top:2%;
+  }
+@media (max-width: 1200px){
+	header{
+		margin: 20px;
+	}
+}
+@media (max-width: 768px){
+	.menu-toggle{
+		display:block;
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+		background:#fff;
+		float:right;
+		cursor: pointer;
+	}
+	.menu-toggle:before{
+		content:'\f0c9';
+		font-family: 'Open Sans', sans-serif;
+		line-height: 40px;
+	}
+	nav{
+		display:none;
+	}
+	.menu-toggle.active:before{
+		content:'\f00d';
+		
+	}
+	nav.active{
+		display:block;
+	}
+	nav.active ul{
+		display:block;
+	}
+	nav.active ul li a{
+		margin:0px;
+	}
+}
